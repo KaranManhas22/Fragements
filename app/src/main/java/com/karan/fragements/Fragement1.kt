@@ -21,6 +21,7 @@ private const val ARG_PARAM2 = "param2"
 class Fragement1 : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        Toast.makeText(requireContext(), "onAttach is called", Toast.LENGTH_SHORT).show()
     }
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -36,6 +37,7 @@ class Fragement1 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
+
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
